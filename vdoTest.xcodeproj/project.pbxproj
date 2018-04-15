@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		BD942AD12083F022001B31B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD942AD02083F022001B31B2 /* AppDelegate.swift */; };
-		BD942AD32083F022001B31B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD942AD22083F022001B31B2 /* ViewController.swift */; };
+		BD942AD32083F022001B31B2 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD942AD22083F022001B31B2 /* ListViewController.swift */; };
 		BD942AD62083F022001B31B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD942AD42083F022001B31B2 /* Main.storyboard */; };
 		BD942AD82083F023001B31B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD942AD72083F023001B31B2 /* Assets.xcassets */; };
 		BD942ADB2083F023001B31B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD942AD92083F023001B31B2 /* LaunchScreen.storyboard */; };
+		BD942AE32083F33D001B31B2 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD942AE22083F33D001B31B2 /* ListCell.swift */; };
+		BD942AE52083F52D001B31B2 /* VideoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD942AE42083F52D001B31B2 /* VideoBean.swift */; };
+		BD942AE72083F699001B31B2 /* VideoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD942AE62083F699001B31B2 /* VideoOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD942ACD2083F022001B31B2 /* vdoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vdoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD942AD02083F022001B31B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD942AD22083F022001B31B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD942AD22083F022001B31B2 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BD942AD52083F022001B31B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD942AD72083F023001B31B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD942ADA2083F023001B31B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD942ADC2083F023001B31B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD942AE22083F33D001B31B2 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		BD942AE42083F52D001B31B2 /* VideoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBean.swift; sourceTree = "<group>"; };
+		BD942AE62083F699001B31B2 /* VideoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				BD942AD02083F022001B31B2 /* AppDelegate.swift */,
-				BD942AD22083F022001B31B2 /* ViewController.swift */,
+				BD942AE42083F52D001B31B2 /* VideoBean.swift */,
+				BD942AE62083F699001B31B2 /* VideoOperation.swift */,
+				BD942AD22083F022001B31B2 /* ListViewController.swift */,
+				BD942AE22083F33D001B31B2 /* ListCell.swift */,
 				BD942AD42083F022001B31B2 /* Main.storyboard */,
 				BD942AD72083F023001B31B2 /* Assets.xcassets */,
 				BD942AD92083F023001B31B2 /* LaunchScreen.storyboard */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD942AD32083F022001B31B2 /* ViewController.swift in Sources */,
+				BD942AE32083F33D001B31B2 /* ListCell.swift in Sources */,
+				BD942AD32083F022001B31B2 /* ListViewController.swift in Sources */,
 				BD942AD12083F022001B31B2 /* AppDelegate.swift in Sources */,
+				BD942AE72083F699001B31B2 /* VideoOperation.swift in Sources */,
+				BD942AE52083F52D001B31B2 /* VideoBean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +292,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = vdoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +301,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rami.vdoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +311,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = vdoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rami.vdoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

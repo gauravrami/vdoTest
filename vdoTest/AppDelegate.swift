@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  vdoTest
-//
-//  Created by GAURAV RAMI on 16/04/18.
-//  Copyright © 2018 GAURAV RAMI. All rights reserved.
-//
+
 
 import UIKit
 
